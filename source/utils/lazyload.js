@@ -9,6 +9,14 @@ import Bundle from './bundle'
 //   </Bundle>
 // )
 
+// export default (component) => (locals) => {
+//   return (
+//       <LazyLoad load={component}>
+//          {
+//              (Component) => Component ? <Component {...locals} /> : false
+//          }
+//       </LazyLoad>)}
+
 export default (component) => (props) => {
   return (
     <Bundle load={component}>

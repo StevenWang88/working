@@ -11,6 +11,10 @@ import createReducer from '../reducers'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 injectTapEventPlugin()
 
+// import createComponent from '../utils/lazyload'
+// import Counter from 'bundle-loader?lazy&name=Counter!../components/dashboard'
+
+
 const mainReducer = combineReducers({
   todo: createReducer
 })
